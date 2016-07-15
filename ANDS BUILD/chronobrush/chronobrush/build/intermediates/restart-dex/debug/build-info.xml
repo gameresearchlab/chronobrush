@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
+    format="7"
+    timestamp="1468606047794525000"
+    token="-8594050103928251147" >
+
+    <task
+        name="javac"
+        duration="377" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="174" />
+    <task
+        name="verifier"
+        duration="31" />
+
+    <artifact
+        location="/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/chronobrush/build/outputs/apk/chronobrush-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="1468606047794525000" >
+        <artifact
+            location="/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/chronobrush/build/outputs/apk/chronobrush-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
