@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kpicture.chronobrush"
+    package="com.kpicture.watchcasting"
     android:installLocation="preferExternal"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="21"
         android:targetSdkVersion="23" />
 
     <supports-screens
@@ -47,10 +47,10 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.kpicture.chronobrush.permission.C2D_MESSAGE"
+        android:name="com.kpicture.watchcasting.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.kpicture.chronobrush.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.kpicture.watchcasting.permission.C2D_MESSAGE" />
 
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
@@ -62,7 +62,7 @@
         android:label="@string/app_name"
         android:theme="@style/UnityThemeSelector" >
         <activity
-            android:name="com.kpicture.chronobrush.UnityPlayerActivity"
+            android:name="com.kpicture.watchcasting.UnityPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -80,7 +80,7 @@
         </activity>
 
         <service
-            android:name="com.kpicture.chronobrush.ListenToWearableService"
+            android:name="com.kpicture.watchcasting.ListenToWearableService"
             android:enabled="true"
             android:exported="true" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
@@ -103,7 +103,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.kpicture.chronobrush.firebaseinitprovider"
+            android:authorities="com.kpicture.watchcasting.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -139,7 +139,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.kpicture.chronobrush" />
+                <category android:name="com.kpicture.watchcasting" />
             </intent-filter>
         </receiver>
         <!--
@@ -199,7 +199,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
             android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
             <intent-filter>
-                <data android:scheme="tagmanager.c.com.kpicture.chronobrush" />
+                <data android:scheme="tagmanager.c.com.kpicture.watchcasting" />
 
                 <action android:name="android.intent.action.VIEW" />
 

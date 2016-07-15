@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Canvas.unity
+- path: Assets/garden.unity
   isLoaded: 1
   isActive: 1

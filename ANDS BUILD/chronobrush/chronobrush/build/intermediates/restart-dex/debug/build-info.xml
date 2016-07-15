@@ -4,29 +4,29 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="1468606047794525000"
-    token="-8594050103928251147" >
+    timestamp="1468607951798097000"
+    token="4191446749162898733" >
 
     <task
         name="javac"
-        duration="377" />
+        duration="313" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="174" />
+        duration="172" />
     <task
         name="verifier"
-        duration="31" />
+        duration="36" />
 
     <artifact
-        location="/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/chronobrush/build/outputs/apk/chronobrush-debug.apk"
+        location="/Users/student/Desktop/chronobrush/ANDS BUILD/ChronoBrush/chronoBrush/build/outputs/apk/chronoBrush-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1468606047794525000" >
+    <build timestamp="1468607951798097000" >
         <artifact
-            location="/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/chronobrush/build/outputs/apk/chronobrush-debug.apk"
+            location="/Users/student/Desktop/chronobrush/ANDS BUILD/ChronoBrush/chronoBrush/build/outputs/apk/chronoBrush-debug.apk"
             type="MAIN" />
     </build>
 

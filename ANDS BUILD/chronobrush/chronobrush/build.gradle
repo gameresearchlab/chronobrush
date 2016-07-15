@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.kpicture.chronobrush"
-        minSdkVersion 9
+        applicationId "com.kpicture.watchcasting"
+        minSdkVersion 21
         targetSdkVersion 23
     }
 

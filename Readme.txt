@@ -1,3 +1,4 @@
+
 How to compile unity watchcasting VR project:
 
 Complete things in unity
@@ -47,11 +48,11 @@ Click on name-name (watchcasting-watchcasting) -> Manifests -> AndroidManifest.x
 COPY/PASTE
 
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.kpicture.chronobrush" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.kpicture.watchcasting" android:installLocation="preferExternal">
   <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
   <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="23" />
   <application android:theme="@style/UnityThemeSelector" android:icon="@drawable/app_icon" android:label="@string/app_name" android:debuggable="true" android:isGame="true" android:banner="@drawable/app_banner">
-    <activity android:label="@string/app_name" android:screenOrientation="fullSensor" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.kpicture.chronobrush.UnityPlayerActivity">
+    <activity android:label="@string/app_name" android:screenOrientation="fullSensor" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.kpicture.watchcasting.UnityPlayerActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -86,7 +87,7 @@ Go to main package and create ListenToWearableService.java
 
 COPY/PASTE
 
-package com.kpicture.chronobrush;
+package com.kpicture.watchcasting;
 
 import android.content.Context;
 import android.os.Bundle;

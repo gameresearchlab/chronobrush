@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/ovrplugin/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "outputFile": "/Users/student/Desktop/chronobrush/ANDS BUILD/ChronoBrush/ovrplugin/build/intermediates/res/merged/androidTest/debug/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush/ovrplugin/build/intermediates/bundles/debug/res/values/values.xml",
+                    "file": "/Users/student/Desktop/chronobrush/ANDS BUILD/ChronoBrush/ovrplugin/build/intermediates/bundles/debug/res/values/values.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

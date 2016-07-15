@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="unity-classes">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/chronobrush/libs/unity-classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/chronoBrush/libs/unity-classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -8,7 +8,7 @@ due to bugs, placing projects in directories containing spaces in the
 path, or characters like ", ' and &, have had issues. We're working to
 eliminate these bugs, but to save yourself headaches you may want to
 move your project to a location where this is not a problem.
-/Users/student/Desktop/chronobrush/ANDS BUILD/chronobrush
+/Users/student/Desktop/chronobrush/ANDS BUILD/ChronoBrush
                                        -                 
 
 Manifest Merging:
@@ -43,18 +43,18 @@ In ovrplugin:
 * libs/vrplatlib.jar => ovrplugin/libs/vrplatlib.jar
 * res/ => ovrplugin/src/main/res/
 * src/ => ovrplugin/src/main/java
-In chronobrush:
-* AndroidManifest.xml => chronobrush/src/main/AndroidManifest.xml
-* assets/ => chronobrush/src/main/assets/
-* libs/armeabi-v7a/libmain.so => chronobrush/src/main/jniLibs/armeabi-v7a/libmain.so
-* libs/armeabi-v7a/libmono.so => chronobrush/src/main/jniLibs/armeabi-v7a/libmono.so
-* libs/armeabi-v7a/libunity.so => chronobrush/src/main/jniLibs/armeabi-v7a/libunity.so
-* libs/unity-classes.jar => chronobrush/libs/unity-classes.jar
-* libs/x86/libmain.so => chronobrush/src/main/jniLibs/x86/libmain.so
-* libs/x86/libmono.so => chronobrush/src/main/jniLibs/x86/libmono.so
-* libs/x86/libunity.so => chronobrush/src/main/jniLibs/x86/libunity.so
-* res/ => chronobrush/src/main/res/
-* src/ => chronobrush/src/main/java/
+In ChronoBrush:
+* AndroidManifest.xml => chronoBrush/src/main/AndroidManifest.xml
+* assets/ => chronoBrush/src/main/assets/
+* libs/armeabi-v7a/libmain.so => chronoBrush/src/main/jniLibs/armeabi-v7a/libmain.so
+* libs/armeabi-v7a/libmono.so => chronoBrush/src/main/jniLibs/armeabi-v7a/libmono.so
+* libs/armeabi-v7a/libunity.so => chronoBrush/src/main/jniLibs/armeabi-v7a/libunity.so
+* libs/unity-classes.jar => chronoBrush/libs/unity-classes.jar
+* libs/x86/libmain.so => chronoBrush/src/main/jniLibs/x86/libmain.so
+* libs/x86/libmono.so => chronoBrush/src/main/jniLibs/x86/libmono.so
+* libs/x86/libunity.so => chronoBrush/src/main/jniLibs/x86/libunity.so
+* res/ => chronoBrush/src/main/res/
+* src/ => chronoBrush/src/main/java/
 
 Next Steps:
 -----------

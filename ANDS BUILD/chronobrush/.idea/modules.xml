@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/chronobrush.iml" filepath="$PROJECT_DIR$/chronobrush.iml" />
-      <module fileurl="file://$PROJECT_DIR$/chronobrush/chronobrush-chronobrush.iml" filepath="$PROJECT_DIR$/chronobrush/chronobrush-chronobrush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChronoBrush.iml" filepath="$PROJECT_DIR$/ChronoBrush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chronoBrush/chronoBrush.iml" filepath="$PROJECT_DIR$/chronoBrush/chronoBrush.iml" />
       <module fileurl="file://$PROJECT_DIR$/ovrplugin/ovrplugin.iml" filepath="$PROJECT_DIR$/ovrplugin/ovrplugin.iml" />
     </modules>
   </component>
