@@ -15,10 +15,10 @@ public class RotateBASIC : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(RotateInterface.getState() != RotateInterface.IDLE)
-		{
-			return;
-		}
+//		if(RotateInterface.getState() != RotateInterface.IDLE)
+//		{
+//			return;
+//		}
 			
 
 		Quaternion rotation = WatchRotation.rotation;
@@ -28,6 +28,7 @@ public class RotateBASIC : MonoBehaviour {
 		if(Input.GetButtonDown("Fire1"))
 		{
 			update_correction = true;
+			GameObject.Find("Cursor").transform.position = Vector3.zero;
 		}
 
 
@@ -46,6 +47,7 @@ public class RotateBASIC : MonoBehaviour {
 			-transform.localRotation.y,
 			-transform.localRotation.z,
 			-transform.localRotation.w);
+
 
 
 	}

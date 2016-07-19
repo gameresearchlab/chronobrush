@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\SculptingTool.cs" />
+     <Compile Include="Assets\TickTockRay\Scripts\DepthCursor.cs" />
      <Compile Include="Assets\TickTockRay\Scripts\KeepUpright.cs" />
      <Compile Include="Assets\TickTockRay\Scripts\Reticle.cs" />
      <Compile Include="Assets\TickTockRay\Scripts\Rotate.cs" />
