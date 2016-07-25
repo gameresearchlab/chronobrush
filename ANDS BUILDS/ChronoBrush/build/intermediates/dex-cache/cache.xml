@@ -19,7 +19,7 @@
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="38e8c7e5cc83c7dfc1841b0981e51866abf6768c">
+        sha1="ff69c7664fc31237d1004b2d4ec104b4daec361d">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab13f9ae744754678c5235abc335227146605a8b/classes.dex" />
     </item>
     <item
@@ -54,14 +54,14 @@
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/exploded-aar/ChronoBrush/ovrplugin/unspecified/jars/libs/vrplatlib.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="41f0bc56304ff21dabab0481c4c224330467fcd5">
+        sha1="b54200b06a4d0a43c25c53d5ded26274916b5814">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/8/vrplatlib_73e77b6d75fe9a1b8a12ef661617b094aa6eb1ee/classes.dex" />
     </item>
     <item
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/exploded-aar/ChronoBrush/ovrplugin/unspecified/jars/libs/SystemUtils.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="469e5d1a55f554320f381c1c2aaa55890afd1c3f">
+        sha1="2f638fb4982d113d8225a835fff8e218cacd1a02">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/8/SystemUtils_7168fc61aa3a3d603b40867b7f283a8b137c9fb7/classes.dex" />
     </item>
     <item
@@ -75,14 +75,14 @@
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/exploded-aar/ChronoBrush/ovrplugin/unspecified/jars/libs/OculusUtilities.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="dc9c320a11a3429e8ad397dcf436a41e900cd1e5">
+        sha1="ba77964ddf90a34c24440e37bc9558fe706c3cb2">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/8/OculusUtilities_1904df9d22b69efff9b622df83bce698219f18e9/classes.dex" />
     </item>
     <item
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="185717530aba709df27f663eeb0025db158e81ff">
+        sha1="9be8bcd49f722bb2897915d272fbb84348d70a34">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9021c53a4f86a3e16e68bd845d9f08cd96c5a390/classes.dex" />
     </item>
     <item
@@ -194,7 +194,7 @@
         jar="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/exploded-aar/ChronoBrush/ovrplugin/unspecified/jars/libs/classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="5dd6c73650ef8bb0a73d41132a8ec6bd13784728">
+        sha1="692d101a070caa0ce2b39feabc486a16148184bf">
         <dex dex="/Users/student/Desktop/chronobrush/ANDS BUILDS/ChronoBrush/chronoBrush/build/intermediates/transforms/dex/debug/folders/1000/8/ovrplugin-unspecified-jars_900bb7d34cfad9d480eb049e52e80ce13426d1a3/classes.dex" />
     </item>
     <item

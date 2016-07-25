@@ -43,10 +43,6 @@ public class DepthCursor : MonoBehaviour {
 		this.transform.position = this.transform.forward * depth;
 
 		Debug.DrawRay(this.transform.position, this.transform.forward);
-
-		TextMesh debug = GameObject.Find("Debug").GetComponent<TextMesh>();
-
-		debug.text = string.Format("{0}\n{1}\n{2}\n{3}\n{4}\n{5}", this.transform.position.x, this.transform.position.y, this.transform.position.z, this.transform.forward.x, this.transform.forward.y, this.transform.forward.z);
 	
 	}
 

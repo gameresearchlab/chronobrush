@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SculptingTool : MonoBehaviour {
 
@@ -7,17 +8,15 @@ public class SculptingTool : MonoBehaviour {
 
 	public int framesToWait;
 	private int framesWaited;
-	private bool isCounting;
 	private int blockCount;
+	private List<float> frameHistory;
 
 	// Use this for initialization
 	void Start () {
 	
-		framesToWait = 40;
+		framesToWait = 5;
 		framesWaited = 0;
-		isCounting = false;
-		prefab = this.gameObject;
-
+		frameHistory = new List<float>();
 	}
 	
 	// Update is called once per frame
@@ -25,29 +24,42 @@ public class SculptingTool : MonoBehaviour {
 
 		TextMesh debug = GameObject.Find("Debug").GetComponent<TextMesh>();
 
-		debug.text = string.Format("{0}\n{1}", framesWaited, blockCount);
-
-		if(isCounting && framesWaited >= framesToWait)
+		if(frameHistory.Count >= 60)
 		{
-			isCounting = false;
-			framesWaited = 0;
+			frameHistory.RemoveAt(0);
 		}
+		frameHistory.Add(1.0f / Time.deltaTime);
 
-		if(isCounting)
-		{
-			framesWaited++;
-			return;
-		}
+		debug.text = string.Format("{0}\n{1}\n{2}", framesWaited, blockCount, getAverage(frameHistory));
 
-		if(RotateInterface.getState() == RotateInterface.LEFT_CLICK || RotateInterface.getState() == RotateInterface.RIGHT_CLICK || RotateInterface.getState() == RotateInterface.LEFT_HALF || RotateInterface.getState() == RotateInterface.RIGHT_HALF)
+		if(framesWaited >= framesToWait)
 		{
 			Instantiate(prefab, this.transform.position, Quaternion.identity);
-			isCounting = true;
+			framesWaited = 0;
 			blockCount++;
+		}
 
+		framesWaited++;
+			
+			
+	
+	}
+
+	float getAverage(List<float> lst){
+		if(lst.Count == 0)
+		{
+			return 0.0f;
+		}
+			
+		float sum = 0.0f;
+
+		for(int i = 0; i < lst.Count; i++)
+		{
+			sum += lst[i];
 		}
 
 
-	
+		return sum / lst.Count;
 	}
+
 }
