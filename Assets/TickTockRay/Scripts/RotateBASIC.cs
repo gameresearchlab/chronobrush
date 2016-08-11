@@ -6,10 +6,13 @@ public class RotateBASIC : MonoBehaviour {
 
 	Quaternion correction;
 
+	private Vector3 defaultCursorPosition;
+
 
 	// Use this for initialization
 	void Start () {
 		correction = Quaternion.identity;
+		defaultCursorPosition = new Vector3(0f, 0f, 2.7f);
 	}
 
 	// Update is called once per frame
@@ -21,20 +24,21 @@ public class RotateBASIC : MonoBehaviour {
 //		}
 			
 
-		Quaternion rotation = WatchRotation.rotation;
+		Quaternion rotation = WatchRotationJNI.rotation;
 
 		bool update_correction = false;
 
 		if(Input.GetButtonDown("Fire1"))
 		{
 			update_correction = true;
-			GameObject.Find("Cursor").transform.position = Vector3.zero;
+			GameObject.Find("Cursor").transform.localPosition = defaultCursorPosition;
+
 		}
 
 
 		if(update_correction)
 		{
-			correction = WatchRotation.rotation;
+			correction = WatchRotationJNI.rotation;
 		}
 
 

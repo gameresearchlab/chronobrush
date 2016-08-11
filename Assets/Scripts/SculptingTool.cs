@@ -10,31 +10,29 @@ public class SculptingTool : MonoBehaviour {
 	private int framesWaited;
 	private int blockCount;
 	private List<float> frameHistory;
+	private static List<Object> meshPointers;
+	private static bool pause;
 
 	// Use this for initialization
 	void Start () {
 	
-		framesToWait = 5;
+		framesToWait = 1;
 		framesWaited = 0;
 		frameHistory = new List<float>();
+		meshPointers = new List<Object>();
+		pause = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		TextMesh debug = GameObject.Find("Debug").GetComponent<TextMesh>();
+		if(pause)
+			return;
 
-		if(frameHistory.Count >= 60)
-		{
-			frameHistory.RemoveAt(0);
-		}
-		frameHistory.Add(1.0f / Time.deltaTime);
-
-		debug.text = string.Format("{0}\n{1}\n{2}", framesWaited, blockCount, getAverage(frameHistory));
 
 		if(framesWaited >= framesToWait)
 		{
-			Instantiate(prefab, this.transform.position, Quaternion.identity);
+			meshPointers.Add(Instantiate(prefab, this.transform.position, Quaternion.identity));
 			framesWaited = 0;
 			blockCount++;
 		}
@@ -45,21 +43,20 @@ public class SculptingTool : MonoBehaviour {
 	
 	}
 
-	float getAverage(List<float> lst){
-		if(lst.Count == 0)
-		{
-			return 0.0f;
+	public static void Play(){
+		pause = false;
+	}
+
+	public static void Pause(){
+		pause = true;
+	}
+
+	public static void Clear(){
+
+		foreach(Object mesh in meshPointers){
+			Destroy(mesh);
 		}
-			
-		float sum = 0.0f;
-
-		for(int i = 0; i < lst.Count; i++)
-		{
-			sum += lst[i];
-		}
-
-
-		return sum / lst.Count;
+		meshPointers = new List<Object>();
 	}
 
 }
